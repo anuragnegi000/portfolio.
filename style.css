@@ -217,7 +217,7 @@ html,body{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
         flex-shrink: 0;
         height:100%;
         width:50%;
