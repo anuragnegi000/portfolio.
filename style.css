@@ -225,6 +225,7 @@ html,body{
     .elem h1{
         padding-top:150px ;
         font-size:7vw;
+        white-space:nowrap;
         font-weight: 300;
     }
     #image-content{
