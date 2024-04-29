@@ -163,3 +163,24 @@ html,body{
         transform: translateX(-100%);
     }
 }
+
+#alphabet{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+#alphabet h5{
+    font-size: 2vw;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 2px solid black;
+}
+
+
+#page2{
+    height: 100%;
+    width: 100%;
+}
