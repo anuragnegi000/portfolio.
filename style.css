@@ -177,6 +177,21 @@ html,body{
     font-weight: 500;
     font-style: italic;
     border-bottom: 2px solid black;
+    letter-spacing: 4px;
+}
+
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing:2px;
+    padding: 0.5vw 0.7vw; 
+    border-radius: 50%;
+    border:1px solid #fff;
+}
+#alphabet h6:hover{
+    border:1px solid black;
 }
 
 
