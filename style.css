@@ -171,6 +171,8 @@ html,body{
     align-items: center;
     justify-content: center;
     gap: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 #alphabet h5{
     font-size: 2vw;
@@ -178,6 +180,7 @@ html,body{
     font-style: italic;
     border-bottom: 2px solid black;
     letter-spacing: 4px;
+    margin-right: 2vw;
 }
 
 #alphabet h6{
@@ -189,13 +192,57 @@ html,body{
     padding: 0.5vw 0.7vw; 
     border-radius: 50%;
     border:1px solid #fff;
+    transition: all ease 0.5s;
 }
 #alphabet h6:hover{
     border:1px solid black;
+    cursor: pointer;
 }
 
 
 #page2{
     height: 100%;
     width: 100%;
+    display: flex;
+}
+
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    padding:6vw;
+}
+#page2-part2{
+    height: 100%;
+    width: 50%;
+    /* background-color: blue;*/
+    padding: 6vw;
+}
+#page2-part1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-left: 3 vw;
+}
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+#page3{
+    padding: 4vw 3vw;
+    position: relative;
+}
+#page3>h1{
+    text-align: center;
+    margin-bottom: 6vh;
+}
+.elem{
+    height: 15vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
 }
