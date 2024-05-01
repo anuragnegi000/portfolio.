@@ -37,7 +37,28 @@ html,body{
     font-size:45px;
     font-weight: 700;
     letter-spacing: -2px;
+    position:relative;
 } 
+#nav h1::after{
+    content:"©️";
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top:22%;
+    right:-8%;
+}
+#nav h1::before{
+    content:"model management";
+    font-family:gilroy;
+    font-weight: 400;
+    font-size:15px;
+    letter-spacing: 0.2px;
+    position: absolute;
+    bottom:15%;
+    right:2%;
+    color: #666;
+}
 #nav h2{
     /* background-color: rgb(0, 255, 8); */
     height: 100%;
@@ -242,7 +263,86 @@ html,body{
     width: 100%;
     /* background-color: red; */
     border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+}
+.elem .elem-part2{
+    /* background-color: red; */
+    width: 45%;
+}
+.elem .elem-part2 h1{
+    font-size:2.7vw;
+    font-weight:500;
+}
+.elem .elem-part2 h5{
+    font-size: 0.8vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.elem h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    width: 6%;
+    font-weight: 300;
+    /* background-color: red; */
 }
 .elem:nth-last-child(1){
     border-bottom: 2px solid black;
+}
+.elem img{
+    background-color: red;
+    position: absolute ;
+    height: 14vh;
+    width: 8vw;
+    left:15%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all ease 0.3s;
+    object-fit: cover;
+}
+.elem img:hover{
+    opacity: 1;
+}
+#marque{
+    /* height: 10vh; */
+    width: 100%;
+    /* background-color: red; */ 
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 1vw;
+}
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font: monument;
+    margin-right: 16px;
+    letter-spacing: 2px;
+    animation-name:move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* overflow-x: hidden; */
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px ));
+    }
+
+}
+#footer{
+    height: 30vh;
+    width: 100%;
 }
