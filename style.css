@@ -398,4 +398,11 @@ html,body{
     width: 10%;
 }
 
+#center{
+    height: 40%;
+    width: 100%;
+    padding: 4vw;
+    /* background-color: red; */
+}
+
 }
