@@ -454,18 +454,46 @@ html,body{
     padding-right: 1vw;
 }
 
-#scroll img{
-    /* display: none; */
-    height: 50%;
-    width: 40%;
+#scroll {
+    height: 20vh;
+    width: 100%;
+    white-space: nowrap; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#scroll img {
+    height: 80%;
+    width: 16%;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
-    /* margin: 1vw;  */
-    padding: 30px;
+    margin: 1vw; 
+    /* margin-right:5vw; */
+    padding: 20px;
 }
-#scroll img:nth-child(3){
-    object-position: 0%;
+
+#container {
+    /* Set width based on the number of images */
+    width: 200%;
+    height: 100%;
+    display: inline-block;
+    padding: 2vw;    
+    animation-name: anime;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+@keyframes anime {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
 
 }
